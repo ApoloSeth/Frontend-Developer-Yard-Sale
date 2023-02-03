@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <title>Products</title>
+        <style>
+            :root{
+                --very-light-pink: #c7c7c7;
+                --text-input-field: #f7f7f7;
+                --hospital-green: #acd9b2;
+                --white: #ffffff;
+                --black: #000000;
+                --sm: 14px;
+                --md: 16px;
+                --lg: 18px
+            }
+            body{
+                font-family: 'Quicksand', sans-serif;
+                margin: 0;
+            }
+            .my-order{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+            .my-order .my-order-container{
+                width: 60%;
+                margin: 0 auto;
+            }
+            .my-order .my-order-container .title{
+                font-size: var(--lg);
+                margin-bottom: 40px;
+            }
+            .my-order .my-order-container .my-orders{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                border-radius: 12px;
+            }
+            .my-order .my-order-container .my-orders div:nth-child(1) p:nth-child(1){
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+            .my-order .my-order-container .my-orders div:nth-child(1) p:nth-child(2){
+                font-weight: 300;
+                font-size: var(--sm);
+                margin-top: 0;
+            }
+            .my-order .my-order-container .my-orders div:nth-child(2){
+                display: flex;
+                align-items: center;
+            }
+            .my-order .my-order-container .my-orders div:nth-child(2) p{
+                font-size: var(--md);
+                margin-right: 12px;
+            }
+            .my-order .my-order-container .my-orders div:nth-child(2) span{
+                font-size: var(--lg);
+                color: var(--very-light-pink);
+                font-weight: bold;
+            }
+        </style>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My orders</h1>
+            <div class="my-orders">
+                <div>
+                    <p>03.25.21</p>
+                    <p>6 articles</p>
+                </div>
+                <div>
+                    <p>$560.00</p>
+                    <a href="/"><img src="./icons/flechita.svg" alt="flecha"></a>
+                </div>
+            </div>
+            <div class="my-orders">
+                <div>
+                    <p>06.15.21</p>
+                    <p>4 articles</p>
+                </div>
+                <div>
+                    <p>$180.00</p>
+                    <a href="/"><img src="./icons/flechita.svg" alt="flecha"></a>
+                </div>
+            </div>
+            <div class="my-orders">
+                <div>
+                    <p>10.08.21</p>
+                    <p>1 articles</p>
+                </div>
+                <div>
+                    <p>$60.00</p>
+                    <a href="/"><img src="./icons/flechita.svg" alt="flecha"></a>
+                </div>
+            </div>
+            <div class="my-orders">
+                <div>
+                    <p>01.27.22</p>
+                    <p>10 articles</p>
+                </div>
+                <div>
+                    <p>$1430.00</p>
+                    <a href="/"><img src="./icons/flechita.svg" alt="flecha"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
