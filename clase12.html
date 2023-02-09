@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <title>Products</title>
+        <style>
+            :root{
+                --very-light-pink: #c7c7c7;
+                --text-input-field: #f7f7f7;
+                --hospital-green: #acd9b2;
+                --white: #ffffff;
+                --black: #000000;
+                --sm: 14px;
+                --md: 16px;
+                --lg: 18px
+            }
+            body{
+                font-family: 'Quicksand', sans-serif;
+                margin: 0;
+            }
+            .product-detail {
+                width: 360px;
+                padding-bottom: 24px;
+                position: absolute;
+                right: 0;
+            }
+            .product-detail-close{
+                background-color: var(--white);
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                padding: 4px;
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .product-detail-close:hover{
+                cursor: pointer;
+            }
+            .product-detail img:nth-child(2) {
+                width: 100%;
+                height: 360px;
+                object-fit: cover;
+                border-radius: 0 0 20px 20px;
+            }
+            .product-detail .product-slaces{
+                display: flex;
+                justify-content: center;
+                margin-top: 12px;
+            }
+            .product-detail .product-slaces div{
+                width: 10px;
+                height: 10px;
+                background-color: var(--very-light-pink);
+                border-radius: 50%;
+                margin: 0 10px;
+            }
+            .product-detail .product-slaces div:nth-child(1){
+                background-color: var(--hospital-green);
+            }
+            .product-detail .product-info{
+                padding: 16px;
+            }
+            .product-detail .product-info p{
+                color: var(--very-light-pink);
+                font-size: var(--md);
+                font-weight: 400;
+            }
+            .product-detail .product-info p:nth-child(1){
+                font-size: var(--md);
+                color: var(--black);
+                font-weight: bold;
+                margin: 0 0 4px 0;
+            }
+            .product-detail .product-info p:nth-child(2){
+                margin-top: 0;
+            }
+            .primary-button{
+                background-color: var(--hospital-green);
+                border: none;
+                border-radius: 8px;
+                color: var(--white);
+                width: 100%;
+                height: 50px;
+                cursor: pointer;
+                font-size: var(--md);
+                font-weight: bold;
+            }
+            .add-to-cart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .add-to-cart {
+                font-size: var(--md);
+            }
+            @media (max-width:640px){
+                .product-detail{
+                    width: 100%;
+                }
+            }
+        </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./icons/icon_close.png" alt="close">
+        </div>
+        <img src="https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg" alt="">
+        <div class="product-slaces">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="product-info">
+            <p>$35.00</p>
+            <p>Bike</p>
+            <p>With is functional and practical interior, this bike also fulfills a decorative function, adding personality and a retro-ventage aesthetic to your kitchen or workplace.</p>
+        </div>
+        <button class="primary-button add-to-cart">
+            <img src="./icons/bt_add_to_cart.svg" alt="cart">
+            <p>Add to cart</p>
+        </button>
+    </aside>
+</body>
+</html>
